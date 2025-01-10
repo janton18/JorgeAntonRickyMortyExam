@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rick and Morty Swiper App (Improved)</title>
+
+  <!-- Swiper CSS (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="swiper.slideTo(0)">Characters</a></li>
+        <li><a href="javascript:void(0)" onclick="swiper.slideTo(1)">Details</a></li>
+        <li><a href="javascript:void(0)" onclick="swiper.slideTo(2)">Favorites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <!-- Swiper Container -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 0: Characters -->
+          <div class="swiper-slide">
+            <section id="charactersSection">
+              <!-- JS will render the list + filters here -->
+            </section>
+          </div>
+
+          <!-- Slide 1: Details -->
+          <div class="swiper-slide">
+            <section id="detailsSection">
+              <!-- JS will render details here, including episodes with name & code -->
+            </section>
+          </div>
+
+          <!-- Slide 2: Favorites -->
+          <div class="swiper-slide">
+            <section id="favoritesSection">
+              <!-- JS will render favorites here -->
+            </section>
+          </div>
+        </div>
+
+        <!-- Swiper navigation arrows -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Rick and Morty Fan App</p>
+  </footer>
+
+  <!-- Swiper JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Main App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
