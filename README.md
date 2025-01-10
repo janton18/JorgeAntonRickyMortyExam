@@ -1,3 +1,5 @@
+link: https://github.com/janton18/JorgeAntonRickyMortyExam.git
+
 Rick and Morty Swiper App
 A single-page application (SPA) that uses Swiper to slide between Characters, Details, and Favorites sections. The app consumes the Rick and Morty API to list characters, show details, and manage favorites in localStorage.
 
